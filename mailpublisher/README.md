@@ -1,6 +1,6 @@
 # MailPublisher Driver
 このパッケージは[エンバーポイントホールディングス株式会社](https://emberpoint.com/)が提供するメール配信サービスである [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)をMC2コンソールバックエンドがメール配信で使用するための機能を提供します
-## メール配信サービスの使用者
+## メール配信サービスの利用者
 このドライバーは下記の事業者様のみをメール配信の利用者として想定しています。
 - [ブックオフグループホールディングス株式会社](https://www.bookoffgroup.co.jp/)
 ## 提供するAPI
