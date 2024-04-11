@@ -14,7 +14,12 @@ NewMtaError(Code, Message) MtaError
 ### レシーバーメソッド
 ```go
 // Error エラーを表す文字列を取得します (errors.Errorの実装)
+// "HTTPステータス: ${Code} エラーメッセージ: ${Message}"フォーマットの文字列が取得されます
 Error() string
+// Code [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたHTTPステータスコードを取得します
+Code() Code
+// Message [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたメッセージを取得します
+Message() Message
 ```
 #### Code [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたHTTPステータスコード
 ##### 生成関数
@@ -26,7 +31,7 @@ ToCode(int) Code
 // Int HTTPステータスコードの値を取得します
 Int() int
 ```
-#### Message [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたメッセージ文字列
+#### Message [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたメッセージ
 ##### 生成関数
 ```go
 ToMessage(string) Message
