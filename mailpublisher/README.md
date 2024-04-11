@@ -9,10 +9,10 @@
 このドライバーの機能は以下のInterfaceが提供するメソッドとして提供されます。
 
 ### パッケージ
-apps/console/backend/pkg/infrastructure/mta/mailpublisher
+`apps/console/backend/pkg/infrastructure/mta/mailpublisher`
 
 ### Interface名
-Driver
+`Driver`
 
 ### 機能
 このドライバーは以下の機能を提供します。
