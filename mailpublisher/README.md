@@ -11,7 +11,7 @@
 ### パッケージ
 apps/console/backend/pkg/infrastructure/mta/mailpublisher
 
-### インターフェース
+### Interface名
 Driver
 
 ### 機能
@@ -40,7 +40,7 @@ NewDriver(RequestUrl, LoginId, LoginPassword) Driver
 ```
 #### RequestUrl リクエスト先URL
 以下の生成関数によって生成され、以下のレシーバーメソッドを持つユーザー定義型。
-フルスペックのURL文字列が期待される。
+フルスペックのURL文字列が期待されます。
 ##### 生成関数
 ```go
 ToRequestUrl(string) RequestUrl

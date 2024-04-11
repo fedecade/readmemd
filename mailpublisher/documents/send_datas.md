@@ -48,7 +48,7 @@ type Target struct {
 #### error
 以下のエラーを返却する可能性がある
 - [MtaError](documents/mta_error.md)
-- [SystemError](documents/system_error.md)
+- [UnhandledError](documents/system_error.md)
 
 ## レコメンドメールデータ送信
 
@@ -95,7 +95,7 @@ type Recommend struct {
 #### error
 以下のエラーを返却する可能性がある
 - [MtaError](documents/mta_error.md)
-- [SystemError](documents/system_error.md)
+- [UnhandledError](documents/unhandled_error.md)
 
 ## Note
 ### メソッドパラメーター構造体とドメインオブジェクトの関係
