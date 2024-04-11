@@ -13,7 +13,7 @@ NewUnhandledError(RootCase) UnhandledError
 ```
 ### レシーバーメソッド
 ```go
-// Error エラーを表す文字列を取得します (errors.Errorの実装)
+// RootCaseがErrorメソッドで提供する文字列を取得します (errors.Errorの実装)
 Error() string
 ```
 #### RootCase 元となったエラー
@@ -23,6 +23,6 @@ ToRootCase(error) RootCase
 ```
 ##### レシーバーメソッド
 ```go
-// Error 元となったエラーオブジェクトを取得します
+// 元となったエラーオブジェクトを取得します
 Error() error
 ```

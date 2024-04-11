@@ -47,7 +47,7 @@ ToRequestUrl(string) RequestUrl
 ```
 ##### レシーバーメソッド
 ```go
-// String リクエストURLの文字列値を取得する
+// リクエストURLの文字列値を取得する
 String() string
 ```
 #### LoginId MailPublisher Smart EditionのログインID
@@ -58,7 +58,7 @@ ToLoginId(string) LoginId
 ```
 ##### レシーバーメソッド
 ```go
-// String リクエストURLの文字列値を取得する
+// リクエストURLの文字列値を取得する
 String() string
 ```
 #### LoginPassword MailPublisher Smart Editionのログインパスワード
@@ -69,6 +69,6 @@ ToLoginPassword(string) LoginPassword
 ```
 ##### レシーバーメソッド
 ```go
-// String リクエストURLの文字列値を取得する
+// リクエストURLの文字列値を取得する
 String() string
 ```
