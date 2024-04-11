@@ -29,10 +29,10 @@ Driver
 このドライバーを使用する際は、以下の関数によってInterfaceオブジェクトを入手します。
 
 ### パッケージ
-```apps/console/backend/pkg/infrastructure/mta/mailpublisher```
+`apps/console/backend/pkg/infrastructure/mta/mailpublisher`
 
 ### 関数名 
-```NewDriver```
+`NewDriver`
 
 ### 関数のシグネチャ
 ```go
