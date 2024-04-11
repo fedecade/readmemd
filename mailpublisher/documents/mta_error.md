@@ -16,9 +16,9 @@ NewMtaError(Code, Message) MtaError
 // Error エラーを表す文字列を取得します (errors.Errorの実装)
 // "HTTPステータス: ${Code} エラーメッセージ: ${Message}"フォーマットの文字列が取得されます
 Error() string
-// Code [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたHTTPステータスコードを取得します
+// Code MailPublisher Smart Editionから返却されたHTTPステータスコードを取得します
 Code() Code
-// Message [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたメッセージを取得します
+// Message MailPublisher Smart Edition]から返却されたメッセージを取得します
 Message() Message
 ```
 #### Code [MailPublisher Smart Edition](https://emberpoint.com/service/mailpublisher/smart-edition/)から返却されたHTTPステータスコード
