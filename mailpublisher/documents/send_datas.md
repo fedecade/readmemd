@@ -1,4 +1,4 @@
-# [MailPublisher Driver](../README.md) - 連携ファイル送信
+メッセージ文字列
 メール配信で使用される配信先リストと差し込みデータをMTAに送信します
 
 ## 提供メソッド
@@ -43,12 +43,12 @@ type Target struct {
 
 #### RequestId
 - MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
-- [連携ファイル送信](documents/send_datas.md)と[メール予約](documents/schedule_email_delivery.md)で使用する
+- [連携ファイル送信](./send_datas.md)と[メール予約](./schedule_email_delivery.md)で使用する
 
 #### error
 以下のエラーを返却する可能性がある
-- [MtaError](documents/mta_error.md)
-- [UnhandledError](documents/system_error.md)
+- [MtaError](./mta_error.md)
+- [UnhandledError](./system_error.md)
 
 ## レコメンドメールデータ送信
 
@@ -90,12 +90,12 @@ type Recommend struct {
 
 #### RequestId
 - MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
-- [連携ファイル送信](documents/send_datas.md)と[メール予約](documents/schedule_email_delivery.md)で使用する
+- [連携ファイル送信](./send_datas.md)と[メール予約](./schedule_email_delivery.md)で使用する
 
 #### error
 以下のエラーを返却する可能性がある
-- [MtaError](documents/mta_error.md)
-- [UnhandledError](documents/unhandled_error.md)
+- [MtaError](./mta_error.md)
+- [UnhandledError](./unhandled_error.md)
 
 ## Note
 ### メソッドパラメーター構造体とドメインオブジェクトの関係
