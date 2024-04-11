@@ -1,9 +1,6 @@
 # [MailPublisher Driver](../README.md) - 連携ファイル送信
 メール配信で使用される配信先リストと差し込みデータをMTAに送信します
 
-## パッケージ
-apps/console/backend/pkg/infrastructure/mta/mailpublisher
-
 ## 提供メソッド
 - ターゲットメールデータ送信 SendTargetingMailData
 - レコメンドメールデータ送信 SendRecommendMailData
