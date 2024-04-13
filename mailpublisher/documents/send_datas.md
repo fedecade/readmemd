@@ -8,7 +8,9 @@
 ## ターゲットメールデータ送信
 
 ### メソッドシグネチャ
+```go
 SendTargetingMailData(TargetingMailData) (RequestId, error)
+```
 
 #### TargetingMailData
 以下の構造を持つ構造体
@@ -54,7 +56,9 @@ type Target struct {
 ## レコメンドメールデータ送信
 
 ### メソッドシグネチャ
+```go
 SendRecommendMailData(RecommendMailData) (RequestId, error)
+```
 
 #### RecommendMailData
 以下の構造を持つ構造体

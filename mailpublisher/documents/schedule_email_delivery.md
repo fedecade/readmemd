@@ -7,7 +7,9 @@
 ## メール配信予約
 
 ### メソッドシグネチャ
+```go
 ScheduleEmailDelivery(RequestId, Schedule) error
+```
 
 #### RequestId
 - [メールデータ送信](./send_datas.md)で取得した、MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
