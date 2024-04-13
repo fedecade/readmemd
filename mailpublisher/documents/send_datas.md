@@ -1,4 +1,4 @@
-# 連携ファイル送信
+# メールデータ送信
 メール配信で使用される配信先リストと差し込みデータをMTAに送信します
 
 ## 提供メソッド
@@ -43,7 +43,7 @@ type Target struct {
 
 #### RequestId
 - MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
-- [連携ファイル送信](./send_datas.md)と[メール予約](./schedule_email_delivery.md)で使用する
+- [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
 
 #### error
 以下のエラーを返却する可能性がある
@@ -90,7 +90,7 @@ type Recommend struct {
 
 #### RequestId
 - MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
-- [連携ファイル送信](./send_datas.md)と[メール予約](./schedule_email_delivery.md)で使用する
+- [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
 
 #### error
 以下のエラーを返却する可能性がある
@@ -111,6 +111,7 @@ type Recommend struct {
 - 各フィールドの値の元となるドメインオブジェクト値
 - ContractIdをcsvカラムのcrm_idに割り当てているがそれでいいか
 - ContractIdがcsvカラムのcrm_id相当である場合、csvカラム名はcrd_idのままにするのか (MailPublisher側でこの値がどの様に使われているか次第と思われる)
+- xnoの値の意味とデータソース
 ##### Target
 |構造体要素名|構造体フィールド名|対応するドメインオブジェクト|
 |---|---|---|
