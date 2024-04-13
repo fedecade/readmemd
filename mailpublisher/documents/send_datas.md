@@ -46,8 +46,8 @@ type Target struct {
 - [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
 
 #### error
-- メールデータの送信に成功した場合はnilを返却する
-- 上記以外の場合以下のエラーを返却する可能性がある
+- 正常終了した場合はnil
+- 異常終了した場合は以下のいずれかのエラーを返却する
     + [MtaError](./mta_error.md)
     + [UnhandledError](./system_error.md)
 
@@ -94,8 +94,8 @@ type Recommend struct {
 - [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
 
 #### error
-- メールデータの送信に成功した場合はnilを返却する
-- 上記以外の場合以下のエラーを返却する可能性がある
+- 正常終了した場合はnil
+- 異常終了した場合は以下のいずれかのエラーを返却する
     + [MtaError](./mta_error.md)
     + [UnhandledError](./system_error.md)
 
