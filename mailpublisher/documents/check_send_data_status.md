@@ -15,6 +15,6 @@ CheckSendDataStatus(RequestId) error
 #### error
 - メールデータの送信が完了した場合はnilを返却する
 - 上記以外の場合以下のエラーを返却する可能性がある
- + [NotYetCompleteError](./not_yet_complete_error.md)
- + [MtaError](./mta_error.md)
- + [UnhandledError](./system_error.md)
+    + [NotYetCompleteError](./not_yet_complete_error.md)
+    + [MtaError](./mta_error.md)
+    + [UnhandledError](./system_error.md)
