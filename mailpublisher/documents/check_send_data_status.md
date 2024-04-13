@@ -7,7 +7,9 @@
 ## 送信データ状態確認
 
 ### メソッドシグネチャ
+```go
 CheckSendDataStatus(RequestId) (SendDataStatus, error)
+```
 
 #### RequestId
 - [メールデータ送信](./send_datas.md)で取得した、MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
@@ -18,7 +20,7 @@ CheckSendDataStatus(RequestId) (SendDataStatus, error)
 ```go
 type SendDataStatus int
 var SendDataStatuses = struct{
-    // まだ送信データが受け付けられていない状態 (リトライ対象)
+    // まだ送信データが受け付けられていない (リトライ対象)
     Busy      SendDataStatus
     // 送信データが受け付けられた 
     Done      SendDataStatus
