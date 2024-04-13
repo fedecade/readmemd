@@ -46,9 +46,10 @@ type Target struct {
 - [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
 
 #### error
-以下のエラーを返却する可能性がある
-- [MtaError](./mta_error.md)
-- [UnhandledError](./system_error.md)
+- メールデータの送信に成功した場合はnilを返却する
+- 上記以外の場合以下のエラーを返却する可能性がある
+    + [MtaError](./mta_error.md)
+    + [UnhandledError](./system_error.md)
 
 ## レコメンドメールデータ送信
 
@@ -93,9 +94,10 @@ type Recommend struct {
 - [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
 
 #### error
-以下のエラーを返却する可能性がある
-- [MtaError](./mta_error.md)
-- [UnhandledError](./unhandled_error.md)
+- メールデータの送信に成功した場合はnilを返却する
+- 上記以外の場合以下のエラーを返却する可能性がある
+    + [MtaError](./mta_error.md)
+    + [UnhandledError](./system_error.md)
 
 ## Note
 ### メソッドパラメーター構造体とドメインオブジェクトの関係
