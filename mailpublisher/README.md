@@ -9,20 +9,24 @@
 このドライバーの機能は以下のInterfaceが提供するメソッドとして提供されます。
 
 ### パッケージ
-`apps/console/backend/pkg/infrastructure/mta/mailpublisher`
+```go
+apps/console/backend/pkg/infrastructure/mta/mailpublisher
+```
 
 ### Interface名
-`Driver`
+```go
+Driver
+```
 
 ### 機能
 このドライバーは以下の機能を提供します。
 インターフェースが提供するメソッドの詳細は各機能のドキュメントで説明しています。
 
-#### [メールデータ送信](documents/send_datas.md)
+#### [連携ファイル送信](documents/send_datas.md)
 メール配信で使用される配信先リストと差し込みデータをMTAに送信します
-#### [送信データ状態確認](documents/check_send_data_status.md)
-[メールデータ送信](documents/send_datas.md)で送信したデータの送信状態を確認します
-#### [メール配信予約](documents/schedule_email_delivery.md)
+#### [連携ファイル状態確認](documents/check_send_data_status.md)
+[連携ファイル送信](documents/send_datas.md)で送信したデータの受信状態を確認します
+#### [メール予約](documents/schedule_email_delivery.md)
 メール配信を予約します
 
 ## このドライバーの使用方法

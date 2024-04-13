@@ -1,4 +1,4 @@
-# メールデータ送信
+# 連携ファイル送信
 メール配信で使用される配信先リストと差し込みデータをMTAに送信します
 
 ## 提供メソッド
@@ -8,9 +8,7 @@
 ## ターゲットメールデータ送信
 
 ### メソッドシグネチャ
-```go
 SendTargetingMailData(TargetingMailData) (RequestId, error)
-```
 
 #### TargetingMailData
 以下の構造を持つ構造体
@@ -45,20 +43,17 @@ type Target struct {
 
 #### RequestId
 - MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
-- [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
+- [連携ファイル送信](./send_datas.md)と[メール予約](./schedule_email_delivery.md)で使用する
 
 #### error
-- 正常終了した場合はnil
-- 異常終了した場合は以下のいずれかのエラーを返却する
-    + [MtaError](./mta_error.md)
-    + [UnhandledError](./system_error.md)
+以下のエラーを返却する可能性がある
+- [MtaError](./mta_error.md)
+- [UnhandledError](./system_error.md)
 
 ## レコメンドメールデータ送信
 
 ### メソッドシグネチャ
-```go
 SendRecommendMailData(RecommendMailData) (RequestId, error)
-```
 
 #### RecommendMailData
 以下の構造を持つ構造体
@@ -95,13 +90,12 @@ type Recommend struct {
 
 #### RequestId
 - MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
-- [メールデータ状態確認](documents/check_send_data_status.md)と[メール配信予約](./schedule_email_delivery.md)で使用する
+- [連携ファイル送信](./send_datas.md)と[メール予約](./schedule_email_delivery.md)で使用する
 
 #### error
-- 正常終了した場合はnil
-- 異常終了した場合は以下のいずれかのエラーを返却する
-    + [MtaError](./mta_error.md)
-    + [UnhandledError](./system_error.md)
+以下のエラーを返却する可能性がある
+- [MtaError](./mta_error.md)
+- [UnhandledError](./unhandled_error.md)
 
 ## Note
 ### メソッドパラメーター構造体とドメインオブジェクトの関係
