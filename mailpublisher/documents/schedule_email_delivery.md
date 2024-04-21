@@ -8,11 +8,23 @@
 
 ### メソッドシグネチャ
 ```go
-ScheduleEmailDelivery(RequestId, Schedule) error
+ScheduleEmailDelivery(RequestId, DraftId, Schedule) error
 ```
 
 #### RequestId
 - [メールデータ送信](./send_datas.md)で取得した、MailPublisherのAPIである`archive_upload.php`のレスポンスに`REQUST_ID`として格納される値
+
+#### DraftId
+以下の生成関数によって生成され、以下のレシーバーメソッドを持つ下書IDを表すユーザー定義型。
+##### 生成関数
+```go
+ToDraftId(int) DraftId
+```
+##### レシーバーメソッド
+```go
+// 下書IDのint値を取得する
+Int() int
+```
 
 #### Schedule
 以下の生成関数によって生成され、以下のレシーバーメソッドを持つ配信予約日時を表すユーザー定義型。
@@ -49,9 +61,3 @@ var ScheduleDeliveryStauses = struct{
 - 正常終了した場合はnil
 - 異常終了した場合は以下のいずれかのエラーを返却する
     + [MtaError](./mta_error.md)
-    + [UnhandledError](./system_error.md)
-
-#### 要確認事項
-ドキュメント "[MailPublisher連携](https://www.notion.so/MailPublisher-91cb28036211475bbc27c3ac911b3579?pvs=4)" には MTAへのリクエストパラメーターとして 'draft_id' が要求されているが、
-- MC2において、この値はだれがいつどこに設定するものか
-- MC2におけるこの値の取得元は何か
